@@ -19,11 +19,11 @@ public class QuickPMPlayerListener implements Listener {
     	msg = event.getMessage();
     	String[] msgp = msg.split(" ");
     	String nick = msgp[0].toString();
-    	if (nick.endsWith(":")){
+    	if (nick.endsWith(":") && msg.length()>1){
     	  nick=nick.substring(0,nick.length()-1);
     	  for (int i=0; i< plugin.getServer().getOnlinePlayers().length; i++){
     		  String cnick=plugin.getServer().getOnlinePlayers()[i].getDisplayName();
-    		  if(cnick.startsWith(nick)){
+    		  if(cnick.toLowerCase().startsWith(nick.toLowerCase())){
     			  String mmsg=msg.substring(nick.length()+1);
     			  event.getPlayer().sendMessage(ChatColor.AQUA + "zprava odeslana");
     			  plugin.getServer().getOnlinePlayers()[i].sendMessage("PM od: " + ChatColor.AQUA + event.getPlayer().getDisplayName());
