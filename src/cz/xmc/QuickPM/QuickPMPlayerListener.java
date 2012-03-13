@@ -25,7 +25,7 @@ public class QuickPMPlayerListener implements Listener {
         
 		//if (event.getMessage().startsWith("/")) return;
     	event.getPlayer().damage(1);
-    	event.getPlayer().sendRawMessage("jsem chuj");
+    	event.getPlayer().sendRawMessage("test test");
     	return;
     	
 	//	event.setFormat(plugin.formatMessage(event.getPlayer(),  plugin.getConfigHandler().getMessageFormat(), event.getMessage()));
