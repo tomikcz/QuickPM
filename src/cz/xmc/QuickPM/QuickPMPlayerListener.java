@@ -21,13 +21,10 @@ public class QuickPMPlayerListener implements Listener {
 	}
     
     @EventHandler(priority = EventPriority.LOWEST)
-	public void onPlayerChat(PlayerChatEvent event) {
-        
-		//if (event.getMessage().startsWith("/")) return;
+	public void onPlayerChat(PlayerChatEvent event) {           	
+    	String[] msg = event.getMessage().split(" ");
     	event.getPlayer().damage(1);
-    	event.getPlayer().sendRawMessage("test test");
+    	event.getPlayer().sendRawMessage("zkouska");
     	return;
-    	
-	//	event.setFormat(plugin.formatMessage(event.getPlayer(),  plugin.getConfigHandler().getMessageFormat(), event.getMessage()));
 	}
 }
