@@ -9,12 +9,13 @@ public class QuickPM extends JavaPlugin {
  
 	public void onEnable(){
 		log = this.getLogger();
-		log.info("Your plugin has been enabled!");
+		log.info("QuickPM loaded");
 
 		new QuickPMPlayerListener(this);
 	}
  
 	public void onDisable(){
-		log.info("Your plugin has been disabled.");
+		
+		log.info("QuickPM has been disabled.");
 	}
 }

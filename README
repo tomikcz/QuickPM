@@ -1,1 +1,8 @@
-test
+QuickPM is lightweight plugin for sending quick private messages. 
+
+Installation:
+Just copy QuickPM.jar to your plugins folder.
+
+Usage:
+[nick]: [message]
+You can also use only first letters of user nickname you sending message to.
