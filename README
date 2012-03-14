@@ -1,8 +1,8 @@
-QuickPM is lightweight plugin for sending quick private messages which is writen for craft bukkit 1.2.3  
+QuickPM is a lightweight plugin written for craft bukkit 1.2.3. It's used to send quick private messages.  
 
 Installation:
 Just copy QuickPM.jar to your plugins folder.
 
 Usage:
-[nick]: [message]
-You can also use only first letters of user nickname you sending message to.
+Using only a few letters from the user's nickname will send the private message even faster.
+ e.g. to message tomikcz you can either enter "tomikcz: message" or "tom: message"
