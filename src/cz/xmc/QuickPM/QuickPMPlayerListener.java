@@ -24,7 +24,7 @@ public class QuickPMPlayerListener implements Listener {
     		  String cnick=plugin.getServer().getOnlinePlayers()[i].getName();
     		  if(cnick.toLowerCase().startsWith(nick.toLowerCase())){
     			  String mmsg=event.getMessage().substring(nick.length()+2);
-    			  event.getPlayer().sendMessage(ChatColor.AQUA + "*** zprava: >>"+mmsg+"<< byla odeslana hraci "+cnick+" ***");
+    			  event.getPlayer().sendMessage(ChatColor.GRAY + cnick  + " <<"+mmsg);
     			  plugin.getServer().getOnlinePlayers()[i].sendMessage(ChatColor.AQUA + event.getPlayer().getName() + ">>"+ ChatColor.GREEN + mmsg);
     			  event.setCancelled(true);
     			  return;
